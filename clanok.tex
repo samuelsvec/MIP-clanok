@@ -43,18 +43,26 @@ Záverečné poznámky sa nachádzajú v časti~\ref{zaver}.
 
 
 \section{Ako funguje autopilot?} \label{nejaka}
-\subsection{Autopilot v lietadlách} \label{ina:nejaka}
-
-Autopilot je bla bla bla... Z obr.~\ref{f:sensors} je všetko jasné.  
+Autopilot je technický systém, ktorý je počas prevádzky schopný zastúpiť človeka v riadení ovládaného objektu bez ďalšej ľudskej asistencie. Historicky prvý funkčný autopilot bol zostrojený v roku 1912 Lawrencom Sperrym, predstavený však bol verejnosti prvý raz až v roku 1914 a uvedený do prevádzky v lodnej doprave. Na obr.~\ref{f:obr2} môžeme vidieť vynálezcu Lawrenca Sperryho.
 
 \begin{figure*}[tbh]
 \centering
-\includegraphics[scale=0.1]{sensors.jpg}
-%Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
-\caption{Senzory autopilota na Tesle}
-\label{f:sensors}
+\includegraphics[scale=0.30]{obr2.jpg}
+\caption{Lawrence Sperry (naľavo)}
+\label{f:obr2}
 \end{figure*}
 
+\subsection{Autopilot v lietadlách} \label{ina:nejaka}
+V letectve sa často stretávame s pomenovaním AFCS.\footnote{Automatic Flight Control Systems - automatické systémy riadenia letu}Tieto systémy sú univerzálne používané v komerčnom letectve. Rozsiahle uplatnenie nachádzajú aj vo vojenskom a všeobecnom letectve, ale koncepcia voľného letu, v rámci ktorej bude v budúcnosti prebiehať plne automatický let, je v podstate zameraná na zníženie preťaženia dýchacích ciest, čo je situácia, ktorá ovplyvňuje najmä komerčné letectvo. Hoci lietadlá všeobecného letectva wm musia tiež pracovať v prostredí voľného letu, väčšina týchto lietadiel má buď iba manuálne riadiace systémy, alebo je inštalácia AFCS len základná. 
+
+Hlavným účelom použitia AFCS je do určitej miery automatizovať lietanie lietadla, aby sa znížila pracovná záťaž pilotov (zvyčajne v určitej kritickej fáze letu), aby sa zachovala bezpečnosť letu. Čoraz častejšie sa AFCS používajú aj na zlepšenie základných letových vlastností lietadla (napr. na zabezpečenie dynamickej stability, aj keď bolo lietadlo navrhnuté ako staticky nestabilné), alebo na overenie základných výkonov lietadla v niektorých atmosférických podmienkach. Na dosiahnutie plne automatického letu bude potrebné, aby sa dosiahlo niekoľko dôležitých technologických a operačných systémových vývojov, ale vždy, keď sa to podarí, výsledný plne automatický systém bude fungovať prostredníctvom už vyvinutého AFCS. 
+
+\begin{figure*}[tbh]
+\centering
+\includegraphics[scale=0.9]{obr1.jpg}
+\caption{Funkčná schéma autopilota}
+\label{f:obr1}
+\end{figure*}
 
 \section{Chyby autopilota} \label{chyby}
 
@@ -65,33 +73,33 @@ Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dok
 
 \subsection{Nejaké vysvetlenie} \label{ina:nejake}
 
-Niekedy treba uviesť zoznam:
+%Niekedy treba uviesť zoznam:
 
-\begin{itemize}
-\item jedna vec
-\item druhá vec
-	\begin{itemize}
-	\item x
-	\item y
-	\end{itemize}
-\end{itemize}
+%\begin{itemize}
+%\item jedna vec
+%\item druhá vec
+	%\begin{itemize}
+	%\item x
+	%\item y
+	%\end{itemize}
+%\end{itemize}
 
-Ten istý zoznam, len číslovaný:
+%Ten istý zoznam, len číslovaný:
 
-\begin{enumerate}
-\item jedna vec
-\item druhá vec
-	\begin{enumerate}
-	\item x
-	\item y
-	\end{enumerate}
-\end{enumerate}
+%\begin{enumerate}
+%\item jedna vec
+%\item druhá vec
+%	\begin{enumerate}
+%	\item x
+%	\item y
+%	\end{enumerate}
+%\end{enumerate}
 
 
-\subsection{Ešte nejaké vysvetlenie} \label{ina:este}
+%\subsection{Ešte nejaké vysvetlenie} \label{ina:este}
 
-\paragraph{Veľmi dôležitá poznámka.}
-Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom.
+%\paragraph{Veľmi dôležitá poznámka.}
+%Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom.
 
 
 
@@ -105,14 +113,13 @@ Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom
 
 
 
-\section{Záver} \label{zaver} % prípadne iný variant názvu
+\section{Záver} \label{zaver} 
 
 
 
 %\acknowledgement{Ak niekomu chcete poďakovať\ldots}
 
 
-% týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
 \bibliography{literatura}
-\bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
+\bibliographystyle{plain} 
 \end{document}
