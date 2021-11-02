@@ -38,22 +38,22 @@ Tento článok bude o tom ako funguje autopilot v lietadlách či v lodiach a ta
 
 
 \section{Úvod}
-Autopilot nie je v dnešnej dobe nový pojem. S autopilotom sa vieme stretnúť aj v našom bežnom živote, a to napríklad v leteckej či vodnej doprave. V oblasti automobilového priemyslu však nie je dostatočne autopilot využívaný. V súčasnej dobe niekoľko popredných firiem pracuje na vytvorení automobilového autopilota, ako napríklad Tesla. Avšak, použitie autopilota prináša aj veľa hrozieb. Základný problém, ktorý bol naznačený v úvode, je podrobnejšie vysvetlený v časti~\ref{chyby}.
-Záverečné poznámky sa nachádzajú v časti~\ref{zaver}.
+Autopilot nie je v dnešnej dobe nový pojem. S autopilotom sa vieme stretnúť aj v našom bežnom živote, a to napríklad v leteckej či vodnej doprave. V oblasti automobilového priemyslu však nie je dostatočne autopilot využívaný. V súčasnej dobe niekoľko popredných firiem pracuje na vytvorení automobilového autopilota, ako napríklad Tesla. Avšak, použitie autopilota prináša aj veľa hrozieb. Základný problém, ktorý bol naznačený v úvode, je podrobnejšie vysvetlený v časti~\ref{AFA}.
+Ďalej je to rozvinuté v časti~\ref{chyby}.
 
 
-\section{Ako funguje autopilot?} \label{nejaka}
-Autopilot je technický systém, ktorý je počas prevádzky schopný zastúpiť človeka v riadení ovládaného objektu bez ďalšej ľudskej asistencie. Historicky prvý funkčný autopilot bol zostrojený v roku 1912 Lawrencom Sperrym, predstavený však bol verejnosti prvý raz až v roku 1914 a uvedený do prevádzky v lodnej doprave. Na obr.~\ref{f:obr2} môžeme vidieť vynálezcu Lawrenca Sperryho.
+\section{Ako funguje autopilot?} \label{AFA}
+Autopilot je technický systém, ktorý je počas prevádzky schopný zastúpiť človeka v riadení ovládaného objektu bez ďalšej ľudskej asistencie. Historicky prvý funkčný autopilot bol zostrojený v roku 1912 Lawrencom Sperrym, predstavený však bol verejnosti prvý raz až v roku 1914 a uvedený do prevádzky v lodnej doprave.\cite{AVA} Na obr.~\ref{f:obr2} môžeme vidieť vynálezcu Lawrenca Sperryho.
 
 \begin{figure*}[tbh]
 \centering
 \includegraphics[scale=0.30]{obr2.jpg}
-\caption{Lawrence Sperry (naľavo)}
+\caption{Lawrence Sperry (naľavo) - prvý funkčný autopilot}
 \label{f:obr2}
 \end{figure*}
 
-\subsection{Autopilot v lietadlách} \label{ina:nejaka}
-V letectve sa často stretávame s pomenovaním AFCS.\footnote{Automatic Flight Control Systems - automatické systémy riadenia letu}Tieto systémy sú univerzálne používané v komerčnom letectve. Rozsiahle uplatnenie nachádzajú aj vo vojenskom a všeobecnom letectve, ale koncepcia voľného letu, v rámci ktorej bude v budúcnosti prebiehať plne automatický let, je v podstate zameraná na zníženie preťaženia dýchacích ciest, čo je situácia, ktorá ovplyvňuje najmä komerčné letectvo. Hoci lietadlá všeobecného letectva wm musia tiež pracovať v prostredí voľného letu, väčšina týchto lietadiel má buď iba manuálne riadiace systémy, alebo je inštalácia AFCS len základná. 
+\subsection{Autopilot v lietadlách} 
+V letectve sa často stretávame s pomenovaním AFCS.\footnote{Automatic Flight Control Systems - automatické systémy riadenia letu}Tieto systémy sú univerzálne používané v komerčnom letectve. Rozsiahle uplatnenie nachádzajú aj vo vojenskom a všeobecnom letectve, ale koncepcia voľného letu, v rámci ktorej bude v budúcnosti prebiehať plne automatický let, je v podstate zameraná na zníženie preťaženia dýchacích ciest, čo je situácia, ktorá ovplyvňuje najmä komerčné letectvo. Hoci lietadlá všeobecného letectva wm musia tiež pracovať v prostredí voľného letu, väčšina týchto lietadiel má buď iba manuálne riadiace systémy, alebo je inštalácia AFCS len základná.\cite{AVA}
 
 Hlavným účelom použitia AFCS je do určitej miery automatizovať lietanie lietadla, aby sa znížila pracovná záťaž pilotov (zvyčajne v určitej kritickej fáze letu), aby sa zachovala bezpečnosť letu. Čoraz častejšie sa AFCS používajú aj na zlepšenie základných letových vlastností lietadla (napr. na zabezpečenie dynamickej stability, aj keď bolo lietadlo navrhnuté ako staticky nestabilné), alebo na overenie základných výkonov lietadla v niektorých atmosférických podmienkach. Na dosiahnutie plne automatického letu bude potrebné, aby sa dosiahlo niekoľko dôležitých technologických a operačných systémových vývojov, ale vždy, keď sa to podarí, výsledný plne automatický systém bude fungovať prostredníctvom už vyvinutého AFCS. 
 
@@ -65,59 +65,6 @@ Hlavným účelom použitia AFCS je do určitej miery automatizovať lietanie li
 \end{figure*}
 
 \section{Chyby autopilota} \label{chyby}
-
-Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
-
-Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
-
-
-\subsection{Nejaké vysvetlenie} \label{ina:nejake}
-
-%Niekedy treba uviesť zoznam:
-
-%\begin{itemize}
-%\item jedna vec
-%\item druhá vec
-	%\begin{itemize}
-	%\item x
-	%\item y
-	%\end{itemize}
-%\end{itemize}
-
-%Ten istý zoznam, len číslovaný:
-
-%\begin{enumerate}
-%\item jedna vec
-%\item druhá vec
-%	\begin{enumerate}
-%	\item x
-%	\item y
-%	\end{enumerate}
-%\end{enumerate}
-
-
-%\subsection{Ešte nejaké vysvetlenie} \label{ina:este}
-
-%\paragraph{Veľmi dôležitá poznámka.}
-%Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom.
-
-
-
-\section{Dôležitá časť} \label{dolezita}
-
-
-
-
-\section{Ešte dôležitejšia časť} \label{dolezitejsia}
-
-
-
-
-\section{Záver} \label{zaver} 
-
-
-
-%\acknowledgement{Ak niekomu chcete poďakovať\ldots}
 
 
 \bibliography{literatura}
