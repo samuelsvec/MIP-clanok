@@ -32,24 +32,24 @@
 \maketitle
 
 \begin{abstract}
-Tento článok bude o tom ako funguje autopilot v lietadlách a taktiež pokrok v automobilovom priemysle. Rozoberie aj aktuálne chyby v softvéroch, ktoré môžu ovplyvniť spoľahlivosť a bezpečnosť autopilota a tým aj zastaviť používanie daného softvéru.
+Tento článok sa bude venovať histórií a fungovaní autopilota v lietadlách a taktiež v automobilovom priemysle. Rozoberie aj aktuálne chyby v softvéroch, ktoré môžu ovplyvniť spoľahlivosť a bezpečnosť autopilota a tým aj zastaviť používanie daného softvéru.
 \end{abstract}
 
-Kľúčové slová: autopilot, chyby, história, softvér
+Kľúčové slová: autopilot, história, softvér, Tesla
 
 \section{Úvod}
 
-Autopilot nie je v dnešnej dobe nový pojem. S autopilotom sa vieme stretnúť aj v našom bežnom živote, a to napríklad v leteckej či vodnej doprave. V oblasti automobilového priemyslu však nie je dostatočne autopilot využívaný. V súčasnej dobe niekoľko popredných firiem pracuje na vytvorení dokonalého automobilového autopilota, ako napríklad Tesla. Avšak, použitie autopilota prináša aj veľa hrozieb. 
+Autopilot nie je v dnešnej dobe nový pojem. S autopilotom sa vieme stretnúť aj v našom bežnom živote, a to napríklad v leteckej či cestnej doprave. V oblasti automobilového priemyslu však nie je dostatočne autopilot využívaný. V súčasnej dobe niekoľko popredných firiem pracuje na vytvorení dokonalého automobilového autopilota, ako napríklad Tesla. Prvý autopilot existuje už vyše sto rokov. Náznaky autonómneho letu pri lietadlách a autonómnej jazdy sú však ešte ďaleko. 
 
-Základný problém, ktorý bol naznačený v úvode, je podrobnejšie vysvetlený v časti~\ref{AFA}.
-Ďalej je to rozvinuté v časti~\ref{chyby}.
+Jeden z problémov, ktorý bol naznačený v úvode, je podrobnejšie vysvetlený v častiach\ref{ALD} a \ref{PAVAZ}.
+Ďalej je to rozvinuté v častiach\ref{ARDAA} a \ref{chyby}
 
 
-\section{Autopilot v leteckej doprave} \label{AFA}
+\section{Autopilot v leteckej doprave} 
 
-\subsection{História autopilota v letectve} 
+\subsection{História autopilota v letectve} \label{ALD}
 
-Autopilot je technický systém, ktorý je počas prevádzky schopný zastúpiť človeka v riadení ovládaného objektu bez ďalšej ľudskej asistencie. Historicky prvý funkčný autopilot bol zostrojený v roku 1912 Lawrencom Sperrym, predstavený však bol verejnosti prvý raz až v roku 1914 a uvedený do prevádzky v lodnej doprave.\cite{AVA} Na obr.~\ref{f:obr2} môžeme vidieť vynálezcu Lawrenca Sperryho.
+Autopilot je technický systém, ktorý je počas prevádzky schopný zastúpiť človeka v riadení ovládaného objektu bez ďalšej ľudskej asistencie. Historicky prvý funkčný autopilot bol zostrojený v roku 1912 Lawrencom Sperrym, predstavený však bol verejnosti prvý raz až v roku 1914 a uvedený do prevádzky v lodnej doprave.\cite{HistoryAutopilot} Na obr.~\ref{f:obr2} môžeme vidieť vynálezcu Lawrenca Sperryho.
 
 \begin{figure*}[tbh]
 \centering
@@ -61,38 +61,30 @@ Autopilot je technický systém, ktorý je počas prevádzky schopný zastúpiť
 \subsection{Autopilot v lietadlách} \label{AVL}
 V letectve sa často stretávame s pomenovaním AFCS.\footnote{Automatic Flight Control Systems - automatické systémy riadenia letu}Tieto systémy sú univerzálne používané v komerčnom letectve. Rozsiahle uplatnenie nachádzajú aj vo vojenskom a všeobecnom letectve, ale koncepcia voľného letu, v rámci ktorej bude v budúcnosti prebiehať plne automatický let, je v podstate zameraná na zníženie preťaženia dýchacích ciest, čo je situácia, ktorá ovplyvňuje najmä komerčné letectvo. Hoci lietadlá všeobecného letectva wm musia tiež pracovať v prostredí voľného letu, väčšina týchto lietadiel má buď iba manuálne riadiace systémy, alebo je inštalácia AFCS len základná.\cite{JenieAFCS}
 
-Hlavným účelom použitia AFCS je do určitej miery automatizovať lietanie lietadla, aby sa znížila pracovná záťaž pilotov (zvyčajne v určitej kritickej fáze letu), aby sa zachovala bezpečnosť letu. Čoraz častejšie sa AFCS používajú aj na zlepšenie základných letových vlastností lietadla (napr. na zabezpečenie dynamickej stability, aj keď bolo lietadlo navrhnuté ako staticky nestabilné), alebo na overenie základných výkonov lietadla v niektorých atmosférických podmienkach. Na dosiahnutie plne automatického letu bude potrebné, aby sa dosiahlo niekoľko dôležitých technologických a operačných systémových vývojov, ale vždy, keď sa to podarí, výsledný plne automatický systém bude fungovať prostredníctvom už vyvinutého AFCS.\cite{AFCS}
+Hlavným účelom použitia AFCS je do určitej miery automatizovať lietanie lietadla, aby sa znížila pracovná záťaž pilotov (zvyčajne v určitej kritickej fáze letu), aby sa zachovala bezpečnosť letu. Čoraz častejšie sa AFCS používajú aj na zlepšenie základných letových vlastností lietadla (napr. na zabezpečenie dynamickej stability, aj keď bolo lietadlo navrhnuté ako staticky nestabilné), alebo na overenie základných výkonov lietadla v niektorých atmosférických podmienkach. Na dosiahnutie plne automatického letu bude potrebné, aby sa dosiahlo niekoľko dôležitých technologických a operačných systémových vývojov, ale vždy, keď sa to podarí, výsledný plne automatický systém bude fungovať prostredníctvom už vyvinutého AFCS.\cite{McLeanAFCS}
 
 \section{Autopilot v automobiloch}
 
 V následujúcej kapitole bude opísaný vývoj autonómnej jazdy v plne elektrických autách značky Tesla až po súčastnosť.
 
-\subsection{Počiatky autopilota v automobiloch značky Tesla}
+\subsection{Počiatky autopilota v automobiloch značky Tesla} \label{PAVAZ}
 
-V roku 2014 bol predstavený prvý polo-autonómny autopilot. Bol to asistent parkovania, ktorý fungoval tak, že ovládal volať a jeho úlohou bolo vmanévrovať auto na parkovacie miesto, zatiaľ čo vodič mal na starosti ovládanie prídávať plyn a brzdiť automobil. 
-
-Prvý autonómny autopilot predstavila automobilka Tesla v roku 2015. Autopilot vedel prebrať ovládanie vozidla. Autopilot sa staral o riadenie vozidla a taktiež oproti predchádzajúcej verzií autopilota aj o plynový a brzdový pedál. Avšak, vodič automobilu musel stále dávať pozor na premávku. Kvôli príliš vysokej dôvere autopilotu však dochádzalo k dopravným nehodám. Preto Tesla zakázala používanie tejto verzie autopilota.
-
-Napriek tomu daná verzia autopilota bola schopná pomocou mobilnej aplikácie vyparkovať automobil z parkovacieho miesta a priviezť auto k vodičovi bez zásahu vodiča. Tento systém sa nazýva \emph{Summon}\footnote{ovládanie automobilu aplikáciou mimo vozidla}a dodnes je Teslou podporovaný.
-
-V roku 2016 nastal veľký prelov v autopilote od automobilky Tesla. Predstavili autopilota, ktorý dokázal stále dávať pozor na premávku okolo automobilu, zvládol riadiť automobil v jednoduchých dopravných situáciach, akou je napríklad dopravná zápcha. \cite{TeslaAutopilot}
+\emph{text bude pridaný vo finálnej verzií}
 
 \subsection{Tesla Autopilot v dnešných dňoch}
 
-V súčastnosti je automobil schopný prebrať riadenie na diaľnici alebo aj zaparkovať bez zásahu vodiča. Tento systém je nazvaný \emph{Parkseek mode}. Po vystúpení z auta nájsť voľné parkovacie miesto a zaparkovať. Následne ho pomocou mobilnej aplikácie jednoducho privolať k sebe. 
-
-Ďalšou novinkou je aj takzvaný Supercharger. Je to špeciálna možnosť automatického nabíjania. Auto sa odstaví pri stojan, ktorý sám pripojí nabíjací kábel. Na stanici Supercharger trvá nabitie batérie automobilu ohruba okolo 30 minút. \cite{TeslaAutopilot}
+\emph{text bude pridaný vo finálnej verzií}
 
 \section{Adaptívne riadenie distribuovaných aplikácií autopilota} \label{ARDAA}
 
 Aj keď sa programovacie modely aj paralelné počítačové systémy naďalej rýchlo vyvíjajú, väčšina analýz výkonnosti zostáva založená na procese vyvinutom pred viac ako štyridsiatimi rokmi:
 
-\begin{itemize}
+\begin{enumerate}
 \item \emph{Aplikačné prístrojové vybavenie} - Aplikačný kód môže byť vybavený nástrojmi automaticky alebo manuálne vložením volaní do rutín knižnice nástrojov. Počas následného vykonávania knižnica nástrojov zaznamenáva príslušné údaje o výkone, vrátane počtu a časov vykonávania procedúr, slučiek a základných blokov.
 \item\emph{Extrakcia údajov o výkone} - Po inštrumentácii sa zachytia údaje o výkone z jedného alebo viacerých vykonávaní programu. V ideálnom prípade tieto spustenia zahŕňajú vstupné údaje a výpočtové zdroje typické pre tie, ktoré sa vyskytujú v produkčnom prostredí.
 \item\emph{Analýza a vizualizácia} - Po následnom spracovaní sa údaje o výkone vizualizujú a analyzujú, aby sa identifikovali úzke miesta výkonu aplikačného programu (napr. pomocou textových profilovacích nástrojov alebo vizualizačných systémov ako AIMS  alebo Pablo)
 \item\emph{Optimalizácia aplikácie} - Na základe merania a analýzy sa buď program upraví tak, aby sa zmiernili vnímané úzke miesta, alebo sa prispôsobia pravidlá runtime systému tak, aby lepšie zodpovedali požiadavkám na zdroje programu. \cite{SoftverAutopilot}
-\end{itemize}
+\end{enumerate}
 
 \subsection{Softvérové komponenty autopilota}
 
