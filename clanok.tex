@@ -32,7 +32,7 @@
 \maketitle
 
 \begin{abstract}
-Tento článok bude o tom ako funguje autopilot v lietadlách či v lodiach a taktiež pokrok v automobilovom priemysle. Rozoberie aj aktuálne chyby v softvéroch, ktoré môžu ovplyvniť spoľahlivosť a bezpečnosť autopilota a tým aj zastaviť používanie daného softvéru.
+Tento článok bude o tom ako funguje autopilot v lietadlách a taktiež pokrok v automobilovom priemysle. Rozoberie aj aktuálne chyby v softvéroch, ktoré môžu ovplyvniť spoľahlivosť a bezpečnosť autopilota a tým aj zastaviť používanie daného softvéru.
 \end{abstract}
 
 Kľúčové slová: autopilot, chyby, história, softvér
@@ -59,16 +59,9 @@ Autopilot je technický systém, ktorý je počas prevádzky schopný zastúpiť
 \end{figure*}
 
 \subsection{Autopilot v lietadlách} \label{AVL}
-V letectve sa často stretávame s pomenovaním AFCS.\footnote{Automatic Flight Control Systems - automatické systémy riadenia letu}Tieto systémy sú univerzálne používané v komerčnom letectve. Rozsiahle uplatnenie nachádzajú aj vo vojenskom a všeobecnom letectve, ale koncepcia voľného letu, v rámci ktorej bude v budúcnosti prebiehať plne automatický let, je v podstate zameraná na zníženie preťaženia dýchacích ciest, čo je situácia, ktorá ovplyvňuje najmä komerčné letectvo. Hoci lietadlá všeobecného letectva wm musia tiež pracovať v prostredí voľného letu, väčšina týchto lietadiel má buď iba manuálne riadiace systémy, alebo je inštalácia AFCS len základná.\cite{AVA}
+V letectve sa často stretávame s pomenovaním AFCS.\footnote{Automatic Flight Control Systems - automatické systémy riadenia letu}Tieto systémy sú univerzálne používané v komerčnom letectve. Rozsiahle uplatnenie nachádzajú aj vo vojenskom a všeobecnom letectve, ale koncepcia voľného letu, v rámci ktorej bude v budúcnosti prebiehať plne automatický let, je v podstate zameraná na zníženie preťaženia dýchacích ciest, čo je situácia, ktorá ovplyvňuje najmä komerčné letectvo. Hoci lietadlá všeobecného letectva wm musia tiež pracovať v prostredí voľného letu, väčšina týchto lietadiel má buď iba manuálne riadiace systémy, alebo je inštalácia AFCS len základná.\cite{JenieAFCS}
 
 Hlavným účelom použitia AFCS je do určitej miery automatizovať lietanie lietadla, aby sa znížila pracovná záťaž pilotov (zvyčajne v určitej kritickej fáze letu), aby sa zachovala bezpečnosť letu. Čoraz častejšie sa AFCS používajú aj na zlepšenie základných letových vlastností lietadla (napr. na zabezpečenie dynamickej stability, aj keď bolo lietadlo navrhnuté ako staticky nestabilné), alebo na overenie základných výkonov lietadla v niektorých atmosférických podmienkach. Na dosiahnutie plne automatického letu bude potrebné, aby sa dosiahlo niekoľko dôležitých technologických a operačných systémových vývojov, ale vždy, keď sa to podarí, výsledný plne automatický systém bude fungovať prostredníctvom už vyvinutého AFCS.\cite{AFCS}
-
-\begin{figure*}[tbh]
-\centering
-\includegraphics[scale=0.9]{obr1.jpg}
-\caption{Funkčná schéma autopilota}
-\label{f:obr1}
-\end{figure*}
 
 \section{Autopilot v automobiloch}
 
@@ -95,15 +88,32 @@ V súčastnosti je automobil schopný prebrať riadenie na diaľnici alebo aj za
 Aj keď sa programovacie modely aj paralelné počítačové systémy naďalej rýchlo vyvíjajú, väčšina analýz výkonnosti zostáva založená na procese vyvinutom pred viac ako štyridsiatimi rokmi:
 
 \begin{itemize}
-\item \emph{Aplikačné prístrojové vybavenie} - Aplikačný kód môže byť vybavený nástrojmi automaticky (napr. záplatovaním objektového kódu alebo kompilátormi) alebo manuálne vložením volaní do rutín knižnice nástrojov. Počas následného vykonávania knižnica nástrojov zaznamenáva príslušné údaje o výkone, vrátane počtu a časov vykonávania procedúr, slučiek a základných blokov.
+\item \emph{Aplikačné prístrojové vybavenie} - Aplikačný kód môže byť vybavený nástrojmi automaticky alebo manuálne vložením volaní do rutín knižnice nástrojov. Počas následného vykonávania knižnica nástrojov zaznamenáva príslušné údaje o výkone, vrátane počtu a časov vykonávania procedúr, slučiek a základných blokov.
 \item\emph{Extrakcia údajov o výkone} - Po inštrumentácii sa zachytia údaje o výkone z jedného alebo viacerých vykonávaní programu. V ideálnom prípade tieto spustenia zahŕňajú vstupné údaje a výpočtové zdroje typické pre tie, ktoré sa vyskytujú v produkčnom prostredí.
-\item\emph{Analýza a vizualizácia} - Po následnom spracovaní sa údaje o výkone vizualizujú a analyzujú, aby sa identifikovali úzke miesta výkonu aplikačného programu (napr. pomocou textových profilovacích nástrojov alebo vizualizačných systémov ako IPS-2, AIMS  alebo Pablo)
-\item\emph{Optimalizácia aplikácie} - Na základe merania a analýzy sa buď program upraví tak, aby sa zmiernili vnímané úzke miesta, alebo sa prispôsobia pravidlá runtime systému tak, aby lepšie zodpovedali požiadavkám na zdroje programu. 
+\item\emph{Analýza a vizualizácia} - Po následnom spracovaní sa údaje o výkone vizualizujú a analyzujú, aby sa identifikovali úzke miesta výkonu aplikačného programu (napr. pomocou textových profilovacích nástrojov alebo vizualizačných systémov ako AIMS  alebo Pablo)
+\item\emph{Optimalizácia aplikácie} - Na základe merania a analýzy sa buď program upraví tak, aby sa zmiernili vnímané úzke miesta, alebo sa prispôsobia pravidlá runtime systému tak, aby lepšie zodpovedali požiadavkám na zdroje programu. \cite{SoftverAutopilot}
 \end{itemize}
 
 \subsection{Softvérové komponenty autopilota}
 
+Oddelením merania výkonu, riadenia a rozhodovania umožňuje Autopilot systémovým dizajnérom nahradiť softvérové rozhodovacie postupy vizualizáciou v reálnom čase a interaktívnym riadením, keď rýchlosť zmien pripúšťa ľudskú kontrolu.
+
+Akýkoľvek adaptívny riadiaci systém musí monitorovať príslušné stavy systému, určiť, aké zmeny sú potrebné, a tieto zmeny realizovať, aby sa splnili požadované ciele. Aby sa dynamicky optimalizovalo správanie aplikácií a behu systému pre distribuované výpočtové siete, systém adaptívneho výkonu s uzavretou slučkou musí zahŕňať
+niečo z nasledujúceho:
+
+\begin{itemize}
+\item \emph{Distribuované senzory výkonu} - dokážu zachytiť údaje o výkone aplikácií a systému a generovať popisy požiadaviek na zdroje a metriky výkonu
+\item \emph{Softvérové ovládače} - môžu povoliť a konfigurovať správanie aplikácií a zásady správy zdrojov
+\item \emph{Rozhodovacie procedúry} - ako lokálne, tak aj globálne, na výber politík správy zdrojov a aktivovanie akčných členov na základe pozorovaných požiadaviek na zdroje aplikácií a systémových odoziev zachytených senzormi výkonu.
+\item \emph{Rozhodovacie mechanizmy} - využívajú údaje z distribuovaných senzorov na vyváženie často protichodných optimalizačných cieľov
+\item \emph{Distribuované menné servery} - podporujú registráciu vzdialených senzorov a akčných členov a požiadavky na senzory a akčné členy založené na vlastnostiach vzdialených klientov
+\item \emph{Klienti senzorov a akčných členov} - interagujú so vzdialenými senzormi a akčnými členmi, monitorujú dáta senzorov a vydávajú príkazy akčným členom \cite{SoftverAutopilot}
+\end{itemize}
+
 \section{Chyby autopilota} \label{chyby}
+
+V tejto kapitole budú opísané chyby autopilota.
+
 \section{Zhrnutie}
 
 \bibliography{literatura}
