@@ -35,11 +35,11 @@
 Tento článok sa bude venovať histórií a softvérovom fungovaní Autopilota v lietadlách a taktiež v automobilovom priemysle. Rozoberie aj aktuálne chyby v softvéroch, ktoré môžu ovplyvniť spoľahlivosť a bezpečnosť Autopilota a tým aj zastaviť používanie daného softvéru.
 \end{abstract}
 
-Kľúčové slová: Autopilot, História Autopilota, softvér, Tesla Autopilot, Chyby Autopilota
+Kľúčové slová: Autopilot, história Autopilota, softvér Autopilota, Tesla Autopilot, chyby Autopilota
 
 \section{Úvod}
 
-Autopilot nie je v dnešnej dobe nový pojem. S Autopilotom sa vieme stretnúť aj v našom bežnom živote, a to napríklad v leteckej či cestnej doprave. V oblasti automobilového priemyslu však nie je dostatočne Autopilot využívaný. V súčasnej dobe niekoľko popredných firiem pracuje na vytvorení dokonalého automobilového autopilota, ako napríklad Tesla. Prvý Autopilot existuje už vyše sto rokov. Náznaky autonómneho letu pri lietadlách a autonómnej jazdy sú však ešte ďaleko. Jeden z problémov, ktorý bol naznačený v úvode, je podrobnejšie vysvetlený v častiach\ref{ALD} a \ref{PAVAZ}.
+Autopilot nie je v dnešnej dobe nový pojem. S Autopilotom sa vieme stretnúť aj v našom bežnom živote, a to napríklad v leteckej či cestnej doprave. V oblasti automobilového priemyslu však nie je dostatočne Autopilot využívaný. V súčasnej dobe niekoľko popredných firiem pracuje na vytvorení dokonalého automobilového autopilota, ako napríklad Tesla. Prvý Autopilot existuje už vyše sto rokov. Náznaky autonómneho letu pri lietadlách a autonómnej jazdy sú však ešte ďaleko. Jeden z problémov, ktorý bol naznačený v úvode, je podrobnejšie vysvetlený v častiach\ref{AVL} a \ref{PAVAZ}.
 Ďalej je to rozvinuté v častiach\ref{ARDAA} a \ref{chyby} 
 
 \section{História Autopilota} \label{ALD}
@@ -49,20 +49,20 @@ Autopilot je technický systém, ktorý je počas prevádzky schopný zastúpiť
 \begin{figure*}[tbh]
 \centering
 \includegraphics[scale=0.27]{obr2.jpg}
-\caption{Lawrence Sperry (naľavo) - prvý funkčný Autopilot\cite{Sperry}}
+\caption{Lawrence Sperry (naľavo) - prvý funkčný Autopilot, zdroj:\cite{Sperry}}
 \label{f:obr2}
 \end{figure*}
 
-\section{Autopilot v leteckej doprave} 
+\section{Autopilot v leteckej doprave} \label{AVL}
 
-\subsection{Autopilot v lietadlách} \label{AVL}
+\subsection{Autopilot v lietadlách}
 V letectve sa často stretávame s pomenovaním AFCS.\footnote{Automatic Flight Control Systems - automatické systémy riadenia letu}Tieto systémy sú univerzálne používané v komerčnom letectve. Rozsiahle uplatnenie nachádzajú aj vo vojenskom a všeobecnom letectve, ale koncepcia voľného letu, v rámci ktorej bude v budúcnosti prebiehať plne automatický let, je v podstate zameraná na zníženie preťaženia dýchacích ciest, čo je situácia, ktorá ovplyvňuje najmä komerčné letectvo. Hoci lietadlá všeobecného letectva wm musia tiež pracovať v prostredí voľného letu, väčšina týchto lietadiel má buď iba manuálne riadiace systémy, alebo je inštalácia AFCS len základná.\cite{JenieAFCS}
 
 Hlavným účelom použitia AFCS je do určitej miery automatizovať lietanie lietadla, aby sa znížila pracovná záťaž pilotov (zvyčajne v určitej kritickej fáze letu), aby sa zachovala bezpečnosť letu. Čoraz častejšie sa AFCS používajú aj na zlepšenie základných letových vlastností lietadla (napr. na zabezpečenie dynamickej stability, aj keď bolo lietadlo navrhnuté ako staticky nestabilné), alebo na overenie základných výkonov lietadla v niektorých atmosférických podmienkach. Na dosiahnutie plne automatického letu bude potrebné, aby sa dosiahlo niekoľko dôležitých technologických a operačných systémových vývojov, ale vždy, keď sa to podarí, výsledný plne automatický systém bude fungovať prostredníctvom už vyvinutého AFCS.\cite{McLeanAFCS}
 
-\section{Autopilot v automobiloch}
+\section{Autopilot v automobiloch} \label{PAVAZ}
 
-\subsection{Počiatky Autopilota v automobiloch značky Tesla} \label{PAVAZ}
+\subsection{Počiatky Autopilota v automobiloch značky Tesla}
 
 V automobiloch značky Tesla bol Autopilot inštalovaný už v roku 2014, a to konkrétne v elektromobile Tesla Model S. Tento model elekromobilu bol vyrábaný už od roku 2012, avšak v tom období ešte automobilka nemala vyvinutý hardvér ani softvér Autopilota. Od roku 2014 majú Tesly nainštalovaný hardvér pre Autopilot, nebol však stále funkčný. Tesla v spolupráci s firmou Mobileye vyvinula softvér pre Autopilot až v roku 2016. Softvér je postupne vylepšovaný softvérovými aktualizáciami. Od roku 2016 vyvinuli mnoho inteligentných funkcií pre Autopilot, ako napríklad adaptívny tempomat, automatické riadenie, ovládanie vozidla tvonku pomocou mobilnej aplikácie, automatické parkovanie a podobné.\cite{Skokan}
 
@@ -73,7 +73,7 @@ V následujúcej tabuľke je možné vidieť porovnanie funkcií prvého Autopil
 \begin{figure*}[tbh]
 \centering
 \includegraphics[scale=0.80]{tabulka.png}
-\caption{Tabuľka - Porovnanie softvérových verzií Autopilota\cite{Skokan}}
+\caption{Tabuľka - Porovnanie softvérových verzií Autopilota, zdroj:\cite{Skokan}}
 \label{f:tabulka}
 \end{figure*}
 
@@ -105,7 +105,7 @@ niečo z nasledujúceho:
 \begin{figure*}[tbh]
 \centering
 \includegraphics[scale=0.40]{diagram.png}
-\caption{Diagram - Softvérové komponenty Autopilota\cite{SoftverAutopilot}}
+\caption{Diagram - Softvérové komponenty Autopilota, zdroj:\cite{SoftverAutopilot}}
 \label{f:diagram}
 \end{figure*}
 
